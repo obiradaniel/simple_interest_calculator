@@ -1,6 +1,10 @@
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+function numberWithCommasold(x) {
+    return (x).toLocaleString('en-US');
 }
+
+function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 
 function compute()
 {

@@ -9,7 +9,7 @@ div {
     background-color:white;
     color:black;
     margin: auto;
-    width: 450px;
+    width: 550px;
     padding: 5px;
     }
 h1 {
@@ -18,12 +18,13 @@ h1 {
 }
 
 label {
-    position: absolute;
-    left: 55ch;
+    display:inline-block;   
+    box-sizing:border-box;
+    margin-left: 15%;
+    text-align: left;
+    padding-bottom: 2%;
     vertical-align : middle;
-    text-align: justify;
     line-height : 20px;
-    margin: 3px;
     width:11ch;
     padding: 5px;
    }
@@ -37,14 +38,10 @@ label {
     vertical-align : middle;
     line-height : 20px;
     margin: 3px;
-    position: absolute;
-    left: 82ch;
 }
 
 input {
     border: 1px solid black;
-    position: absolute;
-    left: 83ch;
     vertical-align : middle;
     line-height : 20px;
     margin: 3px;
@@ -63,23 +60,25 @@ span {
     width:60px;
 }
 
-#percent {
-    left: 43ch;
-}
+
 
 #result {
-    margin: 10px;
+    display:inline-block;   
+    margin-left: 15%;
+    text-align: left;
+    padding-bottom: 2%;
+    vertical-align : middle;
+    line-height : 20px;
+    padding: 5px;
 }
 
 button {
-    position: absolute;
-    left: 69ch;
     font-weight: bold;
     vertical-align : middle;
-    text-align:center;
     line-height : 20px;
-    margin: 10px;
-    margin-bottom: 5px;
+    margin-left: 15%;
+    text-align: left;
+    margin-top: 20px;
 }
 
 footer {
