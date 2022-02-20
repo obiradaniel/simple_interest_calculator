@@ -5,9 +5,10 @@ body {background-color:black;
 
 div {
     border-radius: 25px;
+    float: center;
     background-color:white;
     color:black;
-    text-align:center;
+    margin: auto;
     width: 450px;
     padding: 5px;
     }
@@ -16,27 +17,40 @@ h1 {
     text-align:center;
 }
 
-
 label {
     position: absolute;
-    left: 13ch;
+    left: 55ch;
     vertical-align : middle;
     text-align: justify;
     line-height : 20px;
-    margin: 2px;
+    margin: 3px;
     width:11ch;
+    padding: 5px;
    }
+
+
+#rate {
+    vertical-align : middle;
+}
+
+#rate_val {
+    vertical-align : middle;
+    line-height : 20px;
+    margin: 3px;
+    position: absolute;
+    left: 82ch;
+}
 
 input {
     border: 1px solid black;
     position: absolute;
-    left: 30ch;
+    left: 83ch;
+    vertical-align : middle;
+    line-height : 20px;
+    margin: 3px;
 }
 
-output {
-    position: absolute;
-    left: 39ch;
-}
+
 span {
     display : inline-block;
     vertical-align : middle;
@@ -59,12 +73,13 @@ span {
 
 button {
     position: absolute;
-    left: 15ch;
+    left: 69ch;
     font-weight: bold;
     vertical-align : middle;
     text-align:center;
     line-height : 20px;
-    margin: 2px;
+    margin: 10px;
+    margin-bottom: 5px;
 }
 
 footer {

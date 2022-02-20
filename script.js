@@ -8,7 +8,7 @@ function compute()
     rate_ = document.getElementById("rate").value;
     years_ = document.getElementById("years").value;
     interest = (principal_ * rate_ * years_)/100
-    endyear = (2022 + Number(years_))
+    endyear = (new Date().getFullYear() + parseInt(years_))
 
     document.getElementById("result").innerHTML = "If you deposit " + "<span class='highlight'>" + numberWithCommas(principal_) + "</span>" +",<br/>at an interest of "+"<span class='highlight'>" + rate_+ "%" +"</span>" +".<br/>You will recieve an amount of "+ "<span class='highlight'>"  + numberWithCommas(interest)+ "</span>" + ",<br/>in the year "+ "<span class='highlight'>" + endyear+"." +"</span>"
 
@@ -24,8 +24,8 @@ function checkdata()
       years_ = document.getElementById("years");
 
       //Check if Principal field is empty
-      if(principal_.value == ""){
-              alert("Please enter the Principal amount");
+      if((principal_.value == "") || (principal_.value <= 0)){
+              alert("Please enter a valid Principal amount");
               principal_.focus();
               return false;
       }
@@ -47,4 +47,8 @@ function checkdata()
 
 }
 
-document.getElementById("demo").innerHTML = document.getElementById("rate").value+"%"
+function updateRate() 
+{
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=parseFloat(rateval).toFixed(2) +"%";
+}

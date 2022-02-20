@@ -9,7 +9,8 @@
         <h1>Simple Interest Calculator</h1>
         
         <label> Amount</label> <input type="number"  id="principal" >  <br/>
-        <label> Rate </label> <input type="range" min="1" max="20" step = 0.5 value="10.5"  id="rate" oninput="this.nextElementSibling.value = this.value"><output> 10.50</output><label id ="percent">%</label><br/>>
+        <label> Rate </label> <input type="range" min="1" max="20" step = 0.25 value="10.25"  id="rate" onchange="updateRate()"><span id="rate_val">10.25%</span>
+            <label id ="percent"></label><br/>
         <label> No. of Years </label> <input list="numbers" id="years" name="years">  <br/>
         <datalist id="numbers">
             <option value=1>
